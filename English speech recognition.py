@@ -1,8 +1,8 @@
 import speech_recognition as sr
 import os
-os.chdir("C:/Users/User/Desktop/master")
+os.chdir("Your voice directory")
 r=sr.Recognizer()
-havard = sr.AudioFile("gg.wav")
+havard = sr.AudioFile("Your voice in wav file")
 with havard as source:
     audio= r.record(source)
 r.recognize_google(audio)
